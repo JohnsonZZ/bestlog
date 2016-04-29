@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<include file="Public/header" title="新闻-百事得物流公司" />
+</head>
+
+<body>
+    <include file="Public/nav" />
+	<div class="blankarea1"></div>
+    <div class="main bc"> 
+		<img src="__PUBLIC__/images/case-top.jpg" alt="百事得宣传"  />
+        <div class="blankarea4"></div>
+    	<div class="main-list fl">
+        	<div class="main-menu">
+				<h3>案例展示</h3>
+				<ul class="main-ul">
+					<li id="company-news">成功案例</li>
+					<li id="industry-news"></li>
+				</ul>
+				<h3>联系我们</h3>
+				<ul class="contact-ul">
+					<li>公司名称：<br />百事得物流有限公司</li>
+					<li>官网：www.zqbestlog.com</li>
+					<li>邮编：516000</li>
+					<li>合作热线：<br />0758-2107833</li>
+					<li>联系邮箱: baishidewuliu@163.com</li>  
+				</ul>
+        	</div>
+        </div>
+        <div class="main-content fl">
+        	<div class="main-name">
+            	<span>案例展示</span>
+                <div class="main-back fr">
+                	<a href="{:U('Index/index')}">首页</a>>案例展示
+                </div>
+            </div>
+			<div class="case">
+				<a href="{:U('Home/Case/article/theme/24')}"><img src="__PUBLIC__/images/example1.jpg" width="180px" height="130px"/></a>
+				<div class="content">
+					<a href="{:U('Home/Case/article/theme/24')}"><h2>基于RFID仓储物流管理系统解决方案</h2></a>
+					<p>物流是指原材料、产成品从起点至终点及相关信息有效流动的过程。现代物流运用全新的管理理念，通过对物流全过程多要素的计划、实施和控制，将运输、仓储、装卸、加工、整理、配送、信息等环节有机地结合</p>
+				</div>
+				<a class="detail" href="">查看详情>></a>
+			</div>
+			<div class="case">
+				<a href="{:U('Home/Case/article/theme/23')}"><img src="__PUBLIC__/images/example2.jpg" width="180px" height="130px"/></a>
+				<div class="content">
+					<a href="{:U('Home/Case/article/theme/23')}"><h2>基于RFID技术的服装物流零售管理系统方案</h2></a>
+					<p> 本方案由上海孚恩通过分析企业的需求为客户量身定做。它综合了RFID技术、网络技术、计算机技术、数据库技术和无线通讯技术。结合公司实际需求以及孚恩的丰富经验和独特的技术，我们提出如下的RFID物流零售管理系统的正式方案。</p>
+				</div>
+				<a class="detail" href="">查看详情>></a>
+			</div>
+			<div class="case">
+				<a href="{:U('Home/Case/article/theme/22')}"><img src="__PUBLIC__/images/example3.jpg" width="180px" height="130px"/></a>
+				<div class="content">
+					<a href="{:U('Home/Case/article/theme/22')}"><h2>RFID 服装生产线的应用</h2></a>
+					<p>中国是全世界最大的服装消费国和生产国，随着中国经济的快速发展，与国际市场的高度接轨，国民生活的提高以及政府政策的有力支持，服装行业在不断快速发展并稳步前进。</p>
+				</div>
+				<a class="detail" href="">查看详情>></a>
+			</div>
+        </div>
+    </div>
+	
+	<include file="Public/footer" />
+		<script src="__PUBLIC__/js/jquery.js"></script>
+		<script>
+		$('#Case').addClass("active").siblings().removeClass("active");
+		</script>
+    </body>
+</html>
