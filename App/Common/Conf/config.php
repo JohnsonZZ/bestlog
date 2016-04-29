@@ -3,7 +3,7 @@ return array(
 	//'配置项'=>'配置值'
 	'DB_TYPE'   => 'mysql', // 数据库类型
 	'DB_HOST'   => 'localhost', // 服务器地址
-	'DB_NAME'   => 'bestlog', // 数据库名
+	'DB_NAME'   => '10.66.116.79', // 数据库名
 	'DB_USER'   => 'root', // 用户名
 	'DB_PWD'    => 'zhang123', // 密码
 	'DB_PORT'   => 3306, // 端口
