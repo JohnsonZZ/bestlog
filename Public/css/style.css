@@ -11,7 +11,7 @@ body{font-family:'微软雅黑'}
 /* 公用样式 */
 .nav{height:149px;}
 .nav-top{height:104px;}
-.nav-header{width:1046px;height:104px;}
+.nav-header{width:960px;height:100px;}
 .nav-logo{padding-top:18px;padding-left:80px;font-size:20px;font-family:company!important;color:#39277B;}
 .nav-image{margin-top:5px;width:250px;height:50px;}
 .nav-tell{width:250px;height:25px;}
