@@ -1,12 +1,12 @@
 <?php
 namespace Admin\Controller;
 use Admin\Controller\ComController;
-class ListController extends ComController {
+class GoodsController extends ComController {
     public function index(){
-		$List = M('List');
-		$count = $List->count(); // 查询满足要求的总记录数
+		$Goods = M('Goods');
+		$count = $Goods->count(); // 查询满足要求的总记录数
 		$Page = new \Think\Page($count,8); // 实例化分页类 传入总记录数和每页显示的记录数(10)
-		$list = $List->order('id desc')->limit($Page->firstRow . ',' . $Page->listRows)->select();
+		$list = $Goods->order('ol desc')->limit($Page->firstRow . ',' . $Page->listRows)->select();
 		$Page->setConfig('prev', '<');
 		$Page->setConfig('next', '>');
 		$Page->setConfig('header','');
@@ -20,16 +20,15 @@ class ListController extends ComController {
     }
 	public function edit(){
 		$data['id'] = I('get.id');
-		$List = M('List');
-		$list = $List->where($data)->find();
+		$Goods = M('Goods');
+		$list = $Goods->where($data)->find();
 		$this->assign('list',$list);
 		$this->display();
 	}
 	public function update(){
 		$id = I('post.id');
-		$data['title'] = I('post.title');
 		$data['brief'] = I('post.brief');
-		$data['content'] = $_POST['content'];
+		$data['ol'] = I('post.ol');
 		if(!empty($_FILES)){
 			$upload = new \Think\Upload();// 实例化上传类
 			$upload->subName   =     array('date', 'Ymd');
@@ -49,11 +48,11 @@ class ListController extends ComController {
 				}
 			}
 		}
-		$List = M('List');
+		$Goods = M('Goods');
 		if($id){
-			$path = $List->where('id ='.$id)->field('href')->find();	//更头像
+			$path = $Goods->where('id ='.$id)->field('href')->find();	//更头像
 			$file = 'Public/upload/image/'.$path['href']; //储存之前的图像路径
-			$result = $List->where('id ='.$id)->save($data);
+			$result = $Goods->where('id ='.$id)->save($data);
 			if($result){
 				if(isset($data['href']) && $path['href'] !== 'example/example.jpg'){
 					unlink($file);//成功后删除之前的图像
@@ -63,7 +62,7 @@ class ListController extends ComController {
 				$this->error('修改失败');
 			}
 		}else{
-			$result = $List->add($data);
+			$result = $Goods->add($data);
 			if($result){
 				$this->success('新增成功', 'add');
 			} else {
@@ -79,8 +78,8 @@ class ListController extends ComController {
 		}else{
 			$map['id'] = $lids;
 		}
-		$List = M('List');
-		$result = $List->where($map)->delete();
+		$Goods = M('Goods');
+		$result = $Goods->where($map)->delete();
 		if($result){
 			$this->success('删除成功');
 		} else {

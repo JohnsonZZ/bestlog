@@ -14,8 +14,8 @@
         	<div class="main-menu">
 				<h3>新闻资讯</h3>
 				<ul class="main-ul">
-					<li id="company-news">公司新闻</li>
-					<li id="industry-news">行业动态</li>
+					<li id="company-news"><a href="{:U('News/index')}">新闻列表</a></li>
+					<li id="industry-news"></li>
 				</ul>
 				<h3>联系我们</h3>
 				<ul class="contact-ul">
@@ -36,24 +36,9 @@
             </div>
             <div id="upgrade-company-news" class="main-news">
             	<ul>
-                	<li><a href="">中国广东肇庆百事得物流有限公司</a><span>2016-02-16</span></li>
-                    <li><a href="">中国广东肇庆百事得物流有限公司</a><span>2016-02-16</span></li>
-                    <li><a href="">中国广东肇庆百事得物流有限公司</a><span>2016-02-16</span></li>
-                    <li><a href="">中国广东肇庆百事得物流有限公司</a><span>2016-02-16</span></li>
-                    <li><a href="">中国广东肇庆百事得物流有限公司</a><span>2016-02-16</span></li>
-                    <li><a href="">中国广东肇庆百事得物流有限公司</a><span>2016-02-16</span></li>
-                    <li><a href="">中国广东肇庆百事得物流有限公司</a><span>2016-02-16</span></li>
-                </ul>
-            </div>
-             <div id="upgrade-industry-news" class="main-news none">
-            	<ul>
-                	<li><a href="">2016年2月中国物流业景气指数</a><span>2016-02-16</span></li>
-                    <li><a href="">2016年2月中国物流业景气指数</a><span>2016-02-16</span></li>
-                    <li><a href="">2016年2月中国物流业景气指数</a><span>2016-02-16</span></li>
-                    <li><a href="">2016年2月中国物流业景气指数</a><span>2016-02-16</span></li>
-                    <li><a href="">2016年2月中国物流业景气指数</a><span>2016-02-16</span></li>
-                    <li><a href="">2016年2月中国物流业景气指数</a><span>2016-02-16</span></li>
-                    <li><a href="">2016年2月中国物流业景气指数</a><span>2016-02-16</span></li>
+					<volist name="list" id="val">
+                	<li><a href="{:U('Home/News/article/theme/'.$val[id])}">{$val['title']}</a><span>{$val['time']}</span></li>
+					</volist>
                 </ul>
             </div>
         </div>
@@ -63,15 +48,6 @@
 		<script>
 		$(function(){
 			$('#News').addClass("active").siblings().removeClass("active");
-			$("#company-news").click(function(){
-				$("#upgrade-industry-news").addClass("none");
-				$("#upgrade-company-news").removeClass("none");
-				});
-			$("#industry-news").click(function(){
-				$("#upgrade-industry-news").removeClass("none");
-				$("#upgrade-company-news").addClass("none");
-				});
-			})
 		</script>
     </body>
 </html>

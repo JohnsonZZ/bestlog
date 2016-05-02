@@ -9,10 +9,10 @@
 function addlog($log,$name=false){
 	$Model = M('log');
 	if(!$name){
-		$user = cookie('user');
-		$data['name'] = $user['user'];
+		$user = session('account');
+		$data['user'] = $user;
 	}else{
-		$data['name'] = $name;
+		$data['user'] = $name;
 	}
 	$data['ip'] = $_SERVER["REMOTE_ADDR"];
 	$data['log'] = $log;
