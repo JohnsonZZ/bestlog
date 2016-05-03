@@ -34,19 +34,10 @@
                 	<a href="{:U('Index/index')}">首页</a>>服务产品
                 </div>
             </div>
-			<volist name="list" id="val">
-			<div class="goods">
-				<a href="{:U('Home/Service/goods/id/'.$val[id])}">
-					<div class="image">
-						<img src="__PUBLIC__/upload/image/{$val[href]}" alt="托盘" />
-					</div>
-					<p>价格面议</p>
-					<div class="f14">
-						{$val['brief']}
-					</div>
-				</a>
+			<div class="product">
+				<h1 class="title">厂家直销1111网格九脚托盘 佛山塑料托盘 广东塑料托盘出口专用</h1>
+				{$content}
 			</div>
-			</volist>
         </div>
     </div>
 	<include file="Public/footer" />

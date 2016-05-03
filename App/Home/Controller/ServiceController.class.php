@@ -7,4 +7,10 @@ class ServiceController extends Controller {
 		$this->assign('list',$list);
         $this->display();
 	}
+	public function goods(){
+		$data['id'] = I('get.id');
+		$list = M('Goods')->where($data)->find();
+		$this->assign($list);
+        $this->display();
+	}
 }

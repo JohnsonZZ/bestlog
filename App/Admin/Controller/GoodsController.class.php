@@ -28,6 +28,7 @@ class GoodsController extends ComController {
 	public function update(){
 		$id = I('post.id');
 		$data['brief'] = I('post.brief');
+		$data['content'] = $_POST['content'];
 		$data['ol'] = I('post.ol');
 		if(!empty($_FILES)){
 			$upload = new \Think\Upload();// 实例化上传类

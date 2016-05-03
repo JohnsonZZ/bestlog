@@ -50,6 +50,7 @@
                         <th class="center"><input class="check-all" type="checkbox" value=""></th>
 						<th>产品图</th>
 						<th>简介</th>
+						<th>详情</th>
 						<th>排序</th>
 						<th class="center">操作</th>
 				    </tr>
@@ -60,6 +61,7 @@
 						</td>
 						<td><img src="__PUBLIC__/upload/image/{$val['href']}" width="150px" height="130px" /></td>
 						<td>{$val['brief']|msubstr=0,30}</td>
+						<td><a href="{:U('edit')}?id={$val['id']}">点击查看</a></td>
 						<td>{$val['ol']}</td>
 						<td class="center"><a href="{:U('edit')}?id={$val['id']}"><i class="fa fa-edit"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;<a class="del" href="javascript:;" val="{:U('del')}?id={$val['id']}" title="删除"><i class="fa fa-trash-o"></i></a></td>
 									

@@ -101,6 +101,10 @@ a:active{ text-decoration:none; color:#FFF;}
 /* 产品样式 */
 .goods{float: left;margin-left:18px;margin-top:18px;width: 150px;padding: 7px; border: 1px solid #ddd;overflow: hidden;}
 .goods .image{display: table;font-size: 0; height: 140px;margin-bottom: 5px;overflow: hidden;position: relative;text-align: center;width: 150px;}
+.goods a{color:#000}
+.goods p{color: #ff5500;font-size:12px;font-weight: bold;padding-bottom:3px;}
+.product .title{padding:5px;}
+
 /* 案例样式 */
 .case{width:700px;min-height:120px;padding:40px 0;margin-left:20px;border-bottom: 1px dashed #cccccc;}
 .case .content{float:left;margin-left:10px;width:500px;}

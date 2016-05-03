@@ -1,0 +1,529 @@
+[ 2016-05-03T20:35:38+08:00 ] 127.0.0.1 /bestlog/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000686s ]
+
+[ 2016-05-03T20:35:38+08:00 ] 127.0.0.1 /bestlog/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000618s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040206s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040274s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000784s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000861s ]
+
+[ 2016-05-03T20:35:43+08:00 ] 127.0.0.1 /bestlog/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000610s ]
+SQL: SHOW COLUMNS FROM `zz_admin` [ RunTime:0.0164s ]
+SQL: SELECT * FROM `zz_admin` WHERE ( account = 'admin' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `zz_log` [ RunTime:0.0105s ]
+SQL: INSERT INTO `zz_log` (`user`,`ip`,`log`) VALUES ('admin','127.0.0.1','登陆成功') [ RunTime:0.1012s ]
+
+[ 2016-05-03T20:35:45+08:00 ] 127.0.0.1 /bestlog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+SQL: SHOW COLUMNS FROM `zz_log` [ RunTime:0.0085s ]
+SQL: SELECT * FROM `zz_log` ORDER BY time desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+NOTIC: [8] Undefined variable: page D:\phpStudy\WWW\bestlog\App\Runtime\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 220 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.160768s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.160821s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000667s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000715s ]
+
+[ 2016-05-03T20:36:00+08:00 ] 127.0.0.1 /bestlog/Admin/List/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000525s ]
+SQL: SHOW COLUMNS FROM `zz_list` [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zz_list` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `zz_list` ORDER BY id desc LIMIT 0,8   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000206s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.084828s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.084926s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000915s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001073s ]
+
+[ 2016-05-03T20:36:05+08:00 ] 127.0.0.1 /bestlog/Admin/List/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.137881s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.137941s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000663s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000737s ]
+
+[ 2016-05-03T20:37:02+08:00 ] 127.0.0.1 /bestlog/Admin/List/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000577s ]
+SQL: SHOW COLUMNS FROM `zz_list` [ RunTime:0.0124s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zz_list` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `zz_list` ORDER BY id desc LIMIT 0,8   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042693s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042766s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001212s ]
+
+[ 2016-05-03T20:37:05+08:00 ] 127.0.0.1 /bestlog/Admin/List/edit.html?id=24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000561s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000636s ]
+SQL: SHOW COLUMNS FROM `zz_list` [ RunTime:0.0096s ]
+SQL: SELECT * FROM `zz_list` WHERE `id` = 24 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\bestlog\App\Runtime\Cache\Admin\77f5cb0634281e5d94751ad6747355d6.php 第 229 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\phpStudy\WWW\bestlog\App\Runtime\Cache\Admin\77f5cb0634281e5d94751ad6747355d6.php 第 235 行.
+NOTIC: [8] Use of undefined constant brief - assumed 'brief' D:\phpStudy\WWW\bestlog\App\Runtime\Cache\Admin\77f5cb0634281e5d94751ad6747355d6.php 第 247 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.105397s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.105465s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000888s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000975s ]
+
+[ 2016-05-03T20:37:12+08:00 ] 127.0.0.1 /bestlog/Admin/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+SQL: SHOW COLUMNS FROM `zz_goods` [ RunTime:0.0128s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zz_goods` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `zz_goods` ORDER BY ol desc LIMIT 0,8   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000163s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000268s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.138356s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.138419s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000940s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001029s ]
+
+[ 2016-05-03T20:37:15+08:00 ] 127.0.0.1 /bestlog/Admin/Goods/edit.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000420s ]
+SQL: SHOW COLUMNS FROM `zz_goods` [ RunTime:0.0093s ]
+SQL: SELECT * FROM `zz_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\bestlog\App\Runtime\Cache\Admin\a7acda2ddd30ea547eb62f2f930658e6.php 第 229 行.
+NOTIC: [8] Use of undefined constant brief - assumed 'brief' D:\phpStudy\WWW\bestlog\App\Runtime\Cache\Admin\a7acda2ddd30ea547eb62f2f930658e6.php 第 241 行.
+NOTIC: [8] Use of undefined constant ol - assumed 'ol' D:\phpStudy\WWW\bestlog\App\Runtime\Cache\Admin\a7acda2ddd30ea547eb62f2f930658e6.php 第 251 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025156s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025212s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000802s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000868s ]
+
+[ 2016-05-03T20:37:38+08:00 ] 127.0.0.1 /bestlog/Admin/Goods/update.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000429s ]
+SQL: SHOW COLUMNS FROM `zz_goods` [ RunTime:0.0091s ]
+SQL: SELECT `href` FROM `zz_goods` WHERE ( id =1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `zz_goods` SET `brief`='厂家直销1111网格九脚托盘 佛山塑料托盘 广东塑料托盘出口专用',`ol`='0' WHERE ( id =1 ) [ RunTime:0.0799s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051242s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051328s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001629s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001699s ]
+
+[ 2016-05-03T20:38:22+08:00 ] 127.0.0.1 /bestlog/Admin/Goods/update.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+SQL: SHOW COLUMNS FROM `zz_goods` [ RunTime:0.0089s ]
+SQL: SELECT `href` FROM `zz_goods` WHERE ( id =1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `zz_goods` SET `brief`='厂家直销1111网格九脚托盘 佛山塑料托盘 广东塑料托盘出口专用',`content`='&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &amp;#39;Hiragino Sans GB&amp;#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(255, 255, 255); background-color: rgb(0, 0, 255);&quot;&gt;&lt;span style=&quot;font-weight: 700;&quot;&gt;产品说明：&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &amp;#39;Hiragino Sans GB&amp;#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;1.采用全新、水口或再生HDPE、PP塑胶原料注塑一体成型。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &amp;#39;Hiragino Sans GB&amp;#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;2.耐用、抗冲击、防潮防腐烂、韧性好、方便使用等特点，属于无毒环保产品。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &amp;#39;Hiragino Sans GB&amp;#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;3.常规蓝色、黑色、可定制绿色、红色、黄色、灰色等颜色产品。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &amp;#39;Hiragino Sans GB&amp;#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;4.可以印LOGO，订做各种颜色。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &amp;#39;Hiragino Sans GB&amp;#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;color: rgb(255, 255, 255); font-size: 14pt; background-color: rgb(0, 0, 255);&quot;&gt;&lt;span style=&quot;font-weight: 700;&quot;&gt;产品实物图：&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 700; font-size: 14pt; line-height: 1.5;&quot;&gt;&lt;span style=&quot;color: rgb(255, 255, 255); font-size: 14pt; background-color: rgb(0, 0, 255);&quot;&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &amp;#39;Hiragino Sans GB&amp;#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;color: rgb(255, 255, 255); font-size: 14pt; background-color: rgb(0, 0, 255);&quot;&gt;&lt;span style=&quot;font-weight: 700;&quot;&gt;&lt;img alt=&quot;undefined&quot; height=&quot;562.5&quot; src=&quot;/ueditor/php/upload/image/20160503/1462279055200528.jpg&quot; width=&quot;750&quot; style=&quot;border: none; visibility: visible; vertical-align: bottom; max-width: 790px; zoom: 1;&quot;/&gt;&lt;br/&gt;&lt;img alt=&quot;undefined&quot; height=&quot;562.5&quot; src=&quot;/ueditor/php/upload/image/20160503/1462279055945408.jpg&quot; width=&quot;750&quot; style=&quot;border: none; visibility: visible; vertical-align: bottom; max-width: 790px; zoom: 1;&quot;/&gt;&lt;br/&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;&lt;span style=&quot;font-weight: 700; font-size: 14pt; line-height: 1.5;&quot;&gt;生产车间：&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 700; font-size: 14pt; line-height: 1.5;&quot;&gt;&lt;span style=&quot;color: rgb(255, 255, 255); font-size: 14pt; background-color: rgb(0, 0, 255);&quot;&gt;&amp;nbsp;&lt;img alt=&quot;20140523181535&quot; height=&quot;464.5522388059701&quot; src=&quot;/ueditor/php/upload/image/20160503/1462279056326353.jpg&quot; width=&quot;750&quot; style=&quot;border: none; visibility: visible; vertical-align: bottom; max-width: 790px; zoom: 1;&quot;/&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &amp;#39;Hiragino Sans GB&amp;#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;color: rgb(255, 255, 255); font-size: 14pt; background-color: rgb(0, 0, 255);&quot;&gt;&lt;span style=&quot;font-weight: 700;&quot;&gt;成品仓库：&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 700; font-size: 14pt; line-height: 1.5;&quot;&gt;&lt;span style=&quot;color: rgb(255, 255, 255); font-size: 14pt; background-color: rgb(0, 0, 255);&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;img alt=&quot;20140523181450&quot; height=&quot;464.5522388059701&quot; src=&quot;/ueditor/php/upload/image/20160503/1462279056137830.jpg&quot; width=&quot;750&quot; style=&quot;border: none; visibility: visible; vertical-align: bottom; max-width: 790px; zoom: 1;&quot;/&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &amp;#39;Hiragino Sans GB&amp;#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(255, 255, 255); background-color: rgb(0, 0, 255);&quot;&gt;&lt;span style=&quot;font-weight: 700;&quot;&gt;塑料托盘｜塑胶卡板、栈板的应用：&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &amp;#39;Hiragino Sans GB&amp;#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;适用于服装、机械、电子、塑胶、食品、水产、物流、仓储、高科技电子五金行业、或用于医疗行业、长途运输等，车间长期周转和一次性出口使用，满足客户各方面的需求。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &amp;#39;Hiragino Sans GB&amp;#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(255, 255, 255); background-color: rgb(0, 0, 255);&quot;&gt;&lt;span style=&quot;font-weight: 700;&quot;&gt;塑料托盘｜塑胶卡板、栈板的产品特性：&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &amp;#39;Hiragino Sans GB&amp;#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;(1）四面可插，操作方便；&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &amp;#39;Hiragino Sans GB&amp;#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;(2）既适合在仓库中互相堆垛，又适合在各类货架上使用；&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &amp;#39;Hiragino Sans GB&amp;#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;(3）适合各类卡车运输，方便物料的集装化、单元化运输；&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &amp;#39;Hiragino Sans GB&amp;#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;(4）方便叉车、液压托盘车等搬运工具作业；&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &amp;#39;Hiragino Sans GB&amp;#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;(5）配合防滑橡胶，保证物料在搬运和运输过程中不会滑落；&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &amp;#39;Hiragino Sans GB&amp;#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;(6）使用寿命长，且可循坏再用；&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &amp;#39;Hiragino Sans GB&amp;#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;(7）防潮防蛀、无毒无味、耐磨损、耐酸耐碱、抗冲击一次注塑型。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &amp;#39;Hiragino Sans GB&amp;#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(255, 255, 255); background-color: rgb(0, 0, 255);&quot;&gt;&lt;span style=&quot;font-weight: 700;&quot;&gt;购买需知：&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &amp;#39;Hiragino Sans GB&amp;#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;一：请广大客户在下单购买我公司任何产品前、能先联系我，询问需购买的商品情况、运输等一些情况，这样才能让您准确的获知商品的情况，也才能减少与避免不必要的误会。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &amp;#39;Hiragino Sans GB&amp;#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;二：关于价格问题旺铺上所有商品均为参考价，根据行情价格会有上涨或下调&amp;nbsp;量大可申请优惠&amp;nbsp;商品的价格问题需与我们电话或旺旺联系。欢迎朋友们来我公司考察。我们遵守量大从优的原则。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &amp;#39;Hiragino Sans GB&amp;#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(255, 255, 255); background-color: rgb(0, 0, 255);&quot;&gt;&lt;span style=&quot;font-weight: 700;&quot;&gt;物流快递说明：&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &amp;#39;Hiragino Sans GB&amp;#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;&amp;nbsp;一：外省可发物流一般3~5天可到货。(运费另算)&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &amp;#39;Hiragino Sans GB&amp;#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;&amp;nbsp;二：珠三角内量大可加厂车送货。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &amp;#39;Hiragino Sans GB&amp;#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;&amp;nbsp;三：产品订量少则发快递。(费用详情请来电或旺旺咨询)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;',`ol`='0' WHERE ( id =1 ) [ RunTime:0.0899s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005601s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005662s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000524s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000566s ]
+
+[ 2016-05-03T20:38:24+08:00 ] 127.0.0.1 /bestlog/Admin/Goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000721s ]
+SQL: SHOW COLUMNS FROM `zz_goods` [ RunTime:0.0093s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zz_goods` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `zz_goods` ORDER BY ol desc LIMIT 0,8   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045944s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000614s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000666s ]
+
+[ 2016-05-03T20:38:28+08:00 ] 127.0.0.1 /bestlog/Admin/Goods/edit.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+SQL: SHOW COLUMNS FROM `zz_goods` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `zz_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\bestlog\App\Runtime\Cache\Admin\a7acda2ddd30ea547eb62f2f930658e6.php 第 229 行.
+NOTIC: [8] Use of undefined constant brief - assumed 'brief' D:\phpStudy\WWW\bestlog\App\Runtime\Cache\Admin\a7acda2ddd30ea547eb62f2f930658e6.php 第 241 行.
+NOTIC: [8] Use of undefined constant ol - assumed 'ol' D:\phpStudy\WWW\bestlog\App\Runtime\Cache\Admin\a7acda2ddd30ea547eb62f2f930658e6.php 第 251 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025240s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025319s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000246s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000561s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000606s ]
+
+[ 2016-05-03T20:38:40+08:00 ] 127.0.0.1 /bestlog/Admin/Goods/update.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000702s ]
+SQL: SHOW COLUMNS FROM `zz_goods` [ RunTime:0.0113s ]
+SQL: SELECT `href` FROM `zz_goods` WHERE ( id =1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `zz_goods` SET `brief`='厂家直销1111网格九脚托盘 佛山塑料托盘 广东塑料托盘出口专用',`content`='&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &amp;#39;Hiragino Sans GB&amp;#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(255, 255, 255); background-color: rgb(0, 0, 255);&quot;&gt;&lt;span style=&quot;font-weight: 700;&quot;&gt;产品说明：&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &amp;#39;Hiragino Sans GB&amp;#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;1.采用全新、水口或再生HDPE、PP塑胶原料注塑一体成型。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &amp;#39;Hiragino Sans GB&amp;#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;2.耐用、抗冲击、防潮防腐烂、韧性好、方便使用等特点，属于无毒环保产品。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &amp;#39;Hiragino Sans GB&amp;#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;3.常规蓝色、黑色、可定制绿色、红色、黄色、灰色等颜色产品。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &amp;#39;Hiragino Sans GB&amp;#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;4.可以印LOGO，订做各种颜色。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &amp;#39;Hiragino Sans GB&amp;#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;color: rgb(255, 255, 255); font-size: 14pt; background-color: rgb(0, 0, 255);&quot;&gt;&lt;span style=&quot;font-weight: 700;&quot;&gt;产品实物图：&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 700; font-size: 14pt; line-height: 1.5;&quot;&gt;&lt;span style=&quot;color: rgb(255, 255, 255); font-size: 14pt; background-color: rgb(0, 0, 255);&quot;&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &amp;#39;Hiragino Sans GB&amp;#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;color: rgb(255, 255, 255); font-size: 14pt; background-color: rgb(0, 0, 255);&quot;&gt;&lt;span style=&quot;font-weight: 700;&quot;&gt;&lt;img alt=&quot;undefined&quot; height=&quot;562.5&quot; src=&quot;https://cbu01.alicdn.com/img/ibank/2015/645/459/2176954546_699245856.jpg&quot; width=&quot;750&quot; style=&quot;border: none; visibility: visible; vertical-align: bottom; max-width: 790px; zoom: 1;&quot;/&gt;&lt;br/&gt;&lt;img alt=&quot;undefined&quot; height=&quot;562.5&quot; src=&quot;https://cbu01.alicdn.com/img/ibank/2015/665/459/2176954566_699245856.jpg&quot; width=&quot;750&quot; style=&quot;border: none; visibility: visible; vertical-align: bottom; max-width: 790px; zoom: 1;&quot;/&gt;&lt;br/&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;&lt;span style=&quot;font-weight: 700; font-size: 14pt; line-height: 1.5;&quot;&gt;生产车间：&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 700; font-size: 14pt; line-height: 1.5;&quot;&gt;&lt;span style=&quot;color: rgb(255, 255, 255); font-size: 14pt; background-color: rgb(0, 0, 255);&quot;&gt;&amp;nbsp;&lt;img alt=&quot;20140523181535&quot; height=&quot;464.5522388059701&quot; src=&quot;https://cbu01.alicdn.com/img/ibank/2015/983/952/2089259389_699245856.jpg&quot; width=&quot;750&quot; style=&quot;border: none; visibility: visible; vertical-align: bottom; max-width: 790px; zoom: 1;&quot;/&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &amp;#39;Hiragino Sans GB&amp;#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;color: rgb(255, 255, 255); font-size: 14pt; background-color: rgb(0, 0, 255);&quot;&gt;&lt;span style=&quot;font-weight: 700;&quot;&gt;成品仓库：&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 700; font-size: 14pt; line-height: 1.5;&quot;&gt;&lt;span style=&quot;color: rgb(255, 255, 255); font-size: 14pt; background-color: rgb(0, 0, 255);&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;img alt=&quot;20140523181450&quot; height=&quot;464.5522388059701&quot; src=&quot;https://cbu01.alicdn.com/img/ibank/2015/883/193/2088391388_699245856.jpg&quot; width=&quot;750&quot; style=&quot;border: none; visibility: visible; vertical-align: bottom; max-width: 790px; zoom: 1;&quot;/&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &amp;#39;Hiragino Sans GB&amp;#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(255, 255, 255); background-color: rgb(0, 0, 255);&quot;&gt;&lt;span style=&quot;font-weight: 700;&quot;&gt;塑料托盘｜塑胶卡板、栈板的应用：&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &amp;#39;Hiragino Sans GB&amp;#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;适用于服装、机械、电子、塑胶、食品、水产、物流、仓储、高科技电子五金行业、或用于医疗行业、长途运输等，车间长期周转和一次性出口使用，满足客户各方面的需求。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &amp;#39;Hiragino Sans GB&amp;#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(255, 255, 255); background-color: rgb(0, 0, 255);&quot;&gt;&lt;span style=&quot;font-weight: 700;&quot;&gt;塑料托盘｜塑胶卡板、栈板的产品特性：&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &amp;#39;Hiragino Sans GB&amp;#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;(1）四面可插，操作方便；&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &amp;#39;Hiragino Sans GB&amp;#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;(2）既适合在仓库中互相堆垛，又适合在各类货架上使用；&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &amp;#39;Hiragino Sans GB&amp;#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;(3）适合各类卡车运输，方便物料的集装化、单元化运输；&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &amp;#39;Hiragino Sans GB&amp;#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;(4）方便叉车、液压托盘车等搬运工具作业；&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &amp;#39;Hiragino Sans GB&amp;#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;(5）配合防滑橡胶，保证物料在搬运和运输过程中不会滑落；&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &amp;#39;Hiragino Sans GB&amp;#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;(6）使用寿命长，且可循坏再用；&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &amp;#39;Hiragino Sans GB&amp;#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;(7）防潮防蛀、无毒无味、耐磨损、耐酸耐碱、抗冲击一次注塑型。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &amp;#39;Hiragino Sans GB&amp;#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(255, 255, 255); background-color: rgb(0, 0, 255);&quot;&gt;&lt;span style=&quot;font-weight: 700;&quot;&gt;购买需知：&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &amp;#39;Hiragino Sans GB&amp;#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;一：请广大客户在下单购买我公司任何产品前、能先联系我，询问需购买的商品情况、运输等一些情况，这样才能让您准确的获知商品的情况，也才能减少与避免不必要的误会。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &amp;#39;Hiragino Sans GB&amp;#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;二：关于价格问题旺铺上所有商品均为参考价，根据行情价格会有上涨或下调&amp;nbsp;量大可申请优惠&amp;nbsp;商品的价格问题需与我们电话或旺旺联系。欢迎朋友们来我公司考察。我们遵守量大从优的原则。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &amp;#39;Hiragino Sans GB&amp;#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(255, 255, 255); background-color: rgb(0, 0, 255);&quot;&gt;&lt;span style=&quot;font-weight: 700;&quot;&gt;物流快递说明：&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &amp;#39;Hiragino Sans GB&amp;#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;&amp;nbsp;一：外省可发物流一般3~5天可到货。(运费另算)&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &amp;#39;Hiragino Sans GB&amp;#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;&amp;nbsp;二：珠三角内量大可加厂车送货。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &amp;#39;Hiragino Sans GB&amp;#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;&amp;nbsp;三：产品订量少则发快递。(费用详情请来电或旺旺咨询)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;',`ol`='0' WHERE ( id =1 ) [ RunTime:0.0849s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006074s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006133s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000525s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000568s ]
+
+[ 2016-05-03T20:38:43+08:00 ] 127.0.0.1 /bestlog/Admin/Goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000592s ]
+SQL: SHOW COLUMNS FROM `zz_goods` [ RunTime:0.0087s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zz_goods` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `zz_goods` ORDER BY ol desc LIMIT 0,8   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043461s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043521s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000676s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000731s ]
+
+[ 2016-05-03T20:38:47+08:00 ] 127.0.0.1 /bestlog/Admin/Goods/edit.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000637s ]
+SQL: SHOW COLUMNS FROM `zz_goods` [ RunTime:0.0093s ]
+SQL: SELECT * FROM `zz_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\bestlog\App\Runtime\Cache\Admin\a7acda2ddd30ea547eb62f2f930658e6.php 第 229 行.
+NOTIC: [8] Use of undefined constant brief - assumed 'brief' D:\phpStudy\WWW\bestlog\App\Runtime\Cache\Admin\a7acda2ddd30ea547eb62f2f930658e6.php 第 241 行.
+NOTIC: [8] Use of undefined constant ol - assumed 'ol' D:\phpStudy\WWW\bestlog\App\Runtime\Cache\Admin\a7acda2ddd30ea547eb62f2f930658e6.php 第 251 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027468s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027530s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000387s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000642s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000695s ]
+
+[ 2016-05-03T20:39:47+08:00 ] 127.0.0.1 /bestlog/Admin/Goods/update.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000767s ]
+SQL: SHOW COLUMNS FROM `zz_goods` [ RunTime:0.0091s ]
+SQL: SELECT `href` FROM `zz_goods` WHERE ( id =1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `zz_goods` SET `brief`='厂家直销1111网格九脚托盘 佛山塑料托盘 广东塑料托盘出口专用',`content`='<p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &#39;Hiragino Sans GB&#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;\"><span style=\"font-size: 14pt; color: rgb(255, 255, 255); background-color: rgb(0, 0, 255);\"><span style=\"font-weight: 700;\">产品说明：</span></span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &#39;Hiragino Sans GB&#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;\"><span style=\"font-size: 14pt;\">1.采用全新、水口或再生HDPE、PP塑胶原料注塑一体成型。</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &#39;Hiragino Sans GB&#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;\"><span style=\"font-size: 14pt;\">2.耐用、抗冲击、防潮防腐烂、韧性好、方便使用等特点，属于无毒环保产品。</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &#39;Hiragino Sans GB&#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;\"><span style=\"font-size: 14pt;\">3.常规蓝色、黑色、可定制绿色、红色、黄色、灰色等颜色产品。</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &#39;Hiragino Sans GB&#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;\"><span style=\"font-size: 14pt;\">4.可以印LOGO，订做各种颜色。</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &#39;Hiragino Sans GB&#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;\"><span style=\"color: rgb(255, 255, 255); font-size: 14pt; background-color: rgb(0, 0, 255);\"><span style=\"font-weight: 700;\">产品实物图：</span></span><span style=\"font-weight: 700; font-size: 14pt; line-height: 1.5;\"><span style=\"color: rgb(255, 255, 255); font-size: 14pt; background-color: rgb(0, 0, 255);\"><span style=\"font-size: 14pt;\">&nbsp;</span></span></span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &#39;Hiragino Sans GB&#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;\"><span style=\"color: rgb(255, 255, 255); font-size: 14pt; background-color: rgb(0, 0, 255);\"><span style=\"font-weight: 700;\"><img alt=\"undefined\" height=\"562.5\" src=\"https://cbu01.alicdn.com/img/ibank/2015/645/459/2176954546_699245856.jpg\" width=\"750\" style=\"border: none; visibility: visible; vertical-align: bottom; max-width: 790px; zoom: 1;\"/><br/><img alt=\"undefined\" height=\"562.5\" src=\"https://cbu01.alicdn.com/img/ibank/2015/665/459/2176954566_699245856.jpg\" width=\"750\" style=\"border: none; visibility: visible; vertical-align: bottom; max-width: 790px; zoom: 1;\"/><br/></span><span style=\"font-size: 14pt;\"><span style=\"font-weight: 700; font-size: 14pt; line-height: 1.5;\">生产车间：</span></span></span><span style=\"font-weight: 700; font-size: 14pt; line-height: 1.5;\"><span style=\"color: rgb(255, 255, 255); font-size: 14pt; background-color: rgb(0, 0, 255);\">&nbsp;<img alt=\"20140523181535\" height=\"464.5522388059701\" src=\"https://cbu01.alicdn.com/img/ibank/2015/983/952/2089259389_699245856.jpg\" width=\"750\" style=\"border: none; visibility: visible; vertical-align: bottom; max-width: 790px; zoom: 1;\"/></span></span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &#39;Hiragino Sans GB&#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;\"><span style=\"color: rgb(255, 255, 255); font-size: 14pt; background-color: rgb(0, 0, 255);\"><span style=\"font-weight: 700;\">成品仓库：</span></span><span style=\"font-weight: 700; font-size: 14pt; line-height: 1.5;\"><span style=\"color: rgb(255, 255, 255); font-size: 14pt; background-color: rgb(0, 0, 255);\">&nbsp;</span><img alt=\"20140523181450\" height=\"464.5522388059701\" src=\"https://cbu01.alicdn.com/img/ibank/2015/883/193/2088391388_699245856.jpg\" width=\"750\" style=\"border: none; visibility: visible; vertical-align: bottom; max-width: 790px; zoom: 1;\"/></span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &#39;Hiragino Sans GB&#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;\"><span style=\"font-size: 14pt; color: rgb(255, 255, 255); background-color: rgb(0, 0, 255);\"><span style=\"font-weight: 700;\">塑料托盘｜塑胶卡板、栈板的应用：</span></span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &#39;Hiragino Sans GB&#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;\"><span style=\"font-size: 14pt;\">适用于服装、机械、电子、塑胶、食品、水产、物流、仓储、高科技电子五金行业、或用于医疗行业、长途运输等，车间长期周转和一次性出口使用，满足客户各方面的需求。</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &#39;Hiragino Sans GB&#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;\"><span style=\"font-size: 14pt; color: rgb(255, 255, 255); background-color: rgb(0, 0, 255);\"><span style=\"font-weight: 700;\">塑料托盘｜塑胶卡板、栈板的产品特性：</span></span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &#39;Hiragino Sans GB&#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;\"><span style=\"font-size: 14pt;\">(1）四面可插，操作方便；</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &#39;Hiragino Sans GB&#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;\"><span style=\"font-size: 14pt;\">(2）既适合在仓库中互相堆垛，又适合在各类货架上使用；</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &#39;Hiragino Sans GB&#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;\"><span style=\"font-size: 14pt;\">(3）适合各类卡车运输，方便物料的集装化、单元化运输；</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &#39;Hiragino Sans GB&#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;\"><span style=\"font-size: 14pt;\">(4）方便叉车、液压托盘车等搬运工具作业；</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &#39;Hiragino Sans GB&#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;\"><span style=\"font-size: 14pt;\">(5）配合防滑橡胶，保证物料在搬运和运输过程中不会滑落；</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &#39;Hiragino Sans GB&#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;\"><span style=\"font-size: 14pt;\">(6）使用寿命长，且可循坏再用；</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &#39;Hiragino Sans GB&#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;\"><span style=\"font-size: 14pt;\">(7）防潮防蛀、无毒无味、耐磨损、耐酸耐碱、抗冲击一次注塑型。</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &#39;Hiragino Sans GB&#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;\"><span style=\"font-size: 14pt; color: rgb(255, 255, 255); background-color: rgb(0, 0, 255);\"><span style=\"font-weight: 700;\">购买需知：</span></span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &#39;Hiragino Sans GB&#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;\"><span style=\"font-size: 14pt;\">一：请广大客户在下单购买我公司任何产品前、能先联系我，询问需购买的商品情况、运输等一些情况，这样才能让您准确的获知商品的情况，也才能减少与避免不必要的误会。</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &#39;Hiragino Sans GB&#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;\"><span style=\"font-size: 14pt;\">二：关于价格问题旺铺上所有商品均为参考价，根据行情价格会有上涨或下调&nbsp;量大可申请优惠&nbsp;商品的价格问题需与我们电话或旺旺联系。欢迎朋友们来我公司考察。我们遵守量大从优的原则。</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &#39;Hiragino Sans GB&#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;\"><span style=\"font-size: 14pt; color: rgb(255, 255, 255); background-color: rgb(0, 0, 255);\"><span style=\"font-weight: 700;\">物流快递说明：</span></span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &#39;Hiragino Sans GB&#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;\"><span style=\"font-size: 14pt;\">&nbsp;一：外省可发物流一般3~5天可到货。(运费另算)</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &#39;Hiragino Sans GB&#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;\"><span style=\"font-size: 14pt;\">&nbsp;二：珠三角内量大可加厂车送货。</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &#39;Hiragino Sans GB&#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;\"><span style=\"font-size: 14pt;\">&nbsp;三：产品订量少则发快递。(费用详情请来电或旺旺咨询)</span></p><p><br/></p>',`ol`='0' WHERE ( id =1 ) [ RunTime:0.0293s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006763s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006828s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000661s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000705s ]
+
+[ 2016-05-03T20:39:49+08:00 ] 127.0.0.1 /bestlog/Admin/Goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000664s ]
+SQL: SHOW COLUMNS FROM `zz_goods` [ RunTime:0.0109s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zz_goods` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `zz_goods` ORDER BY ol desc LIMIT 0,8   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051067s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000640s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000893s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000956s ]
+
+[ 2016-05-03T20:39:52+08:00 ] 127.0.0.1 /bestlog/Admin/Goods/edit.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000534s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000905s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000980s ]
+SQL: SHOW COLUMNS FROM `zz_goods` [ RunTime:0.0096s ]
+SQL: SELECT * FROM `zz_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\bestlog\App\Runtime\Cache\Admin\a7acda2ddd30ea547eb62f2f930658e6.php 第 229 行.
+NOTIC: [8] Use of undefined constant brief - assumed 'brief' D:\phpStudy\WWW\bestlog\App\Runtime\Cache\Admin\a7acda2ddd30ea547eb62f2f930658e6.php 第 241 行.
+NOTIC: [8] Use of undefined constant ol - assumed 'ol' D:\phpStudy\WWW\bestlog\App\Runtime\Cache\Admin\a7acda2ddd30ea547eb62f2f930658e6.php 第 251 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.080576s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080661s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000516s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000726s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000775s ]
+
+[ 2016-05-03T20:42:07+08:00 ] 127.0.0.1 /bestlog/Admin/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000632s ]
+SQL: SHOW COLUMNS FROM `zz_goods` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zz_goods` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `zz_goods` ORDER BY ol desc LIMIT 0,8   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044483s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044542s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000892s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000974s ]
+
+[ 2016-05-03T20:42:58+08:00 ] 127.0.0.1 /bestlog/Admin/Goods/edit.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000734s ]
+SQL: SHOW COLUMNS FROM `zz_goods` [ RunTime:0.0096s ]
+SQL: SELECT * FROM `zz_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\bestlog\App\Runtime\Cache\Admin\a7acda2ddd30ea547eb62f2f930658e6.php 第 229 行.
+NOTIC: [8] Use of undefined constant brief - assumed 'brief' D:\phpStudy\WWW\bestlog\App\Runtime\Cache\Admin\a7acda2ddd30ea547eb62f2f930658e6.php 第 241 行.
+NOTIC: [8] Use of undefined constant ol - assumed 'ol' D:\phpStudy\WWW\bestlog\App\Runtime\Cache\Admin\a7acda2ddd30ea547eb62f2f930658e6.php 第 251 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025108s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025181s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001129s ]
+
+[ 2016-05-03T20:43:21+08:00 ] 127.0.0.1 /bestlog/Admin/Goods/update.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
+SQL: SHOW COLUMNS FROM `zz_goods` [ RunTime:0.0086s ]
+SQL: SELECT `href` FROM `zz_goods` WHERE ( id =1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `zz_goods` SET `brief`='厂家直销1111网格九脚托盘 佛山塑料托盘 广东塑料托盘出口专用',`content`='<p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &#39;Hiragino Sans GB&#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;\"><span style=\"font-size: 14pt; color: rgb(255, 255, 255); background-color: rgb(0, 0, 255);\"><span style=\"font-weight: 700;\">产品说明：</span></span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &#39;Hiragino Sans GB&#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;\"><span style=\"font-size: 14pt;\">1.采用全新、水口或再生HDPE、PP塑胶原料注塑一体成型。</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &#39;Hiragino Sans GB&#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;\"><span style=\"font-size: 14pt;\">2.耐用、抗冲击、防潮防腐烂、韧性好、方便使用等特点，属于无毒环保产品。</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &#39;Hiragino Sans GB&#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;\"><span style=\"font-size: 14pt;\">3.常规蓝色、黑色、可定制绿色、红色、黄色、灰色等颜色产品。</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &#39;Hiragino Sans GB&#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;\"><span style=\"font-size: 14pt;\">4.可以印LOGO，订做各种颜色。</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &#39;Hiragino Sans GB&#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;\"><span style=\"color: rgb(255, 255, 255); font-size: 14pt; background-color: rgb(0, 0, 255);\"><span style=\"font-weight: 700;\">产品实物图：</span></span><span style=\"font-weight: 700; font-size: 14pt; line-height: 1.5;\"><span style=\"color: rgb(255, 255, 255); font-size: 14pt; background-color: rgb(0, 0, 255);\"><span style=\"font-size: 14pt;\">&nbsp;</span></span></span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &#39;Hiragino Sans GB&#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;\"><span style=\"color: rgb(255, 255, 255); font-size: 14pt; background-color: rgb(0, 0, 255);\"><span style=\"font-weight: 700;\"><img alt=\"undefined\" height=\"562.5\" src=\"https://cbu01.alicdn.com/img/ibank/2015/645/459/2176954546_699245856.jpg\" width=\"750\" style=\"border: none; visibility: visible; vertical-align: bottom; max-width: 790px; zoom: 1;\"/><br/><img alt=\"undefined\" height=\"562.5\" src=\"https://cbu01.alicdn.com/img/ibank/2015/665/459/2176954566_699245856.jpg\" width=\"750\" style=\"border: none; visibility: visible; vertical-align: bottom; max-width: 790px; zoom: 1;\"/><br/></span><span style=\"font-size: 14pt;\"><span style=\"font-weight: 700; font-size: 14pt; line-height: 1.5;\">生产车间：</span></span></span><span style=\"font-weight: 700; font-size: 14pt; line-height: 1.5;\"><span style=\"color: rgb(255, 255, 255); font-size: 14pt; background-color: rgb(0, 0, 255);\">&nbsp;<img alt=\"20140523181535\" height=\"464.5522388059701\" src=\"https://cbu01.alicdn.com/img/ibank/2015/983/952/2089259389_699245856.jpg\" width=\"750\" style=\"border: none; visibility: visible; vertical-align: bottom; max-width: 790px; zoom: 1;\"/></span></span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &#39;Hiragino Sans GB&#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;\"><span style=\"color: rgb(255, 255, 255); font-size: 14pt; background-color: rgb(0, 0, 255);\"><span style=\"font-weight: 700;\">成品仓库：</span></span><span style=\"font-weight: 700; font-size: 14pt; line-height: 1.5;\"><span style=\"color: rgb(255, 255, 255); font-size: 14pt; background-color: rgb(0, 0, 255);\">&nbsp;</span><img alt=\"20140523181450\" height=\"464.5522388059701\" src=\"https://cbu01.alicdn.com/img/ibank/2015/883/193/2088391388_699245856.jpg\" width=\"750\" style=\"border: none; visibility: visible; vertical-align: bottom; max-width: 790px; zoom: 1;\"/></span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &#39;Hiragino Sans GB&#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;\"><span style=\"font-size: 14pt; color: rgb(255, 255, 255); background-color: rgb(0, 0, 255);\"><span style=\"font-weight: 700;\">塑料托盘｜塑胶卡板、栈板的应用：</span></span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &#39;Hiragino Sans GB&#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;\"><span style=\"font-size: 14pt;\">适用于服装、机械、电子、塑胶、食品、水产、物流、仓储、高科技电子五金行业、或用于医疗行业、长途运输等，车间长期周转和一次性出口使用，满足客户各方面的需求。</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &#39;Hiragino Sans GB&#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;\"><span style=\"font-size: 14pt; color: rgb(255, 255, 255); background-color: rgb(0, 0, 255);\"><span style=\"font-weight: 700;\">塑料托盘｜塑胶卡板、栈板的产品特性：</span></span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &#39;Hiragino Sans GB&#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;\"><span style=\"font-size: 14pt;\">(1）四面可插，操作方便；</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &#39;Hiragino Sans GB&#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;\"><span style=\"font-size: 14pt;\">(2）既适合在仓库中互相堆垛，又适合在各类货架上使用；</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &#39;Hiragino Sans GB&#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;\"><span style=\"font-size: 14pt;\">(3）适合各类卡车运输，方便物料的集装化、单元化运输；</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &#39;Hiragino Sans GB&#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;\"><span style=\"font-size: 14pt;\">(4）方便叉车、液压托盘车等搬运工具作业；</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &#39;Hiragino Sans GB&#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;\"><span style=\"font-size: 14pt;\">(5）配合防滑橡胶，保证物料在搬运和运输过程中不会滑落；</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &#39;Hiragino Sans GB&#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;\"><span style=\"font-size: 14pt;\">(6）使用寿命长，且可循坏再用；</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &#39;Hiragino Sans GB&#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;\"><span style=\"font-size: 14pt;\">(7）防潮防蛀、无毒无味、耐磨损、耐酸耐碱、抗冲击一次注塑型。</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &#39;Hiragino Sans GB&#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;\"><span style=\"font-size: 14pt; color: rgb(255, 255, 255); background-color: rgb(0, 0, 255);\"><span style=\"font-weight: 700;\">购买需知：</span></span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &#39;Hiragino Sans GB&#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;\"><span style=\"font-size: 14pt;\">一：请广大客户在下单购买我公司任何产品前、能先联系我，询问需购买的商品情况、运输等一些情况，这样才能让您准确的获知商品的情况，也才能减少与避免不必要的误会。</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &#39;Hiragino Sans GB&#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;\"><span style=\"font-size: 14pt;\">二：关于价格问题旺铺上所有商品均为参考价，根据行情价格会有上涨或下调&nbsp;量大可申请优惠&nbsp;商品的价格问题需与我们电话或旺旺联系。欢迎朋友们来我公司考察。我们遵守量大从优的原则。</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &#39;Hiragino Sans GB&#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;\"><span style=\"font-size: 14pt; color: rgb(255, 255, 255); background-color: rgb(0, 0, 255);\"><span style=\"font-weight: 700;\">物流快递说明：</span></span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &#39;Hiragino Sans GB&#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;\"><span style=\"font-size: 14pt;\">&nbsp;一：外省可发物流一般3~5天可到货。(运费另算)</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &#39;Hiragino Sans GB&#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;\"><span style=\"font-size: 14pt;\">&nbsp;二：珠三角内量大可加厂车送货。</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5; clear: both; color: rgb(51, 51, 51); font-family: &#39;Hiragino Sans GB&#39;, Tahoma, Arial, 宋体, sans-serif; font-size: 12px; white-space: normal;\"><span style=\"font-size: 14pt;\">&nbsp;三：产品订量少则发快递。(费用详情请来电咨询)</span></p><p><br/></p>',`ol`='0' WHERE ( id =1 ) [ RunTime:0.1098s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006383s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006459s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000585s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000628s ]
+
+[ 2016-05-03T20:43:24+08:00 ] 127.0.0.1 /bestlog/Admin/Goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000594s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `zz_goods` [ RunTime:0.0086s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zz_goods` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `zz_goods` ORDER BY ol desc LIMIT 0,8   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042729s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042790s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000613s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000657s ]
+
