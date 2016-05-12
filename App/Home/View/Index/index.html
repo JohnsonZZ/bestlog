@@ -17,15 +17,12 @@
 				<div class="news-list fr">
 					<h3 class="fl">公司新闻</h3>
 					<div class="news-more fr">
-						<a class="fr" href="news.html">+More</a>
+						<a class="fr" href="{:U('News/index')}">+More</a>
 					</div>
 					<ul class="news-ul fl">
-						<li><a href="">中国广东肇庆百事得物流有限公司</a><span>2016-02-16</span></li><hr />
-						<li><a href="">2016年2月中国物流业景气指数</a><span>2016-02-16</span></li><hr />
-						<li><a href="">全球新兴市场物流指数排名</a><span>2016-02-16</span></li><hr />
-						<li><a href="">中国广东肇庆百事得物流有限公司</a><span>2016-02-16</span></li><hr />
-						<li><a href="">2016年2月中国物流业景气指数</a><span>2016-02-16</span></li><hr />
-						<li><a href="">全球新兴市场物流指数排名</a><span>2016-02-16</span></li>
+						<volist name="list" id="val">
+						<li><a href="{:U('Home/News/article/theme/'.$val[id])}">{$val['title']}</a><span>{$val['time']}</span></li><hr />
+						</volist>
 					</ul>
 				</div>            
 			</div>
@@ -33,7 +30,7 @@
 			<div class="company fl">
 				<h3 class="fl">公司简介</h3>
 				<div class="company-more fr">
-					<a class="fr" href="information.html">+More</a>
+					<a class="fr" href="{:U('Comp/index')}">+More</a>
 				</div>
 				<div class="company-content fl">
 					<div class="company-image">
@@ -55,9 +52,6 @@
             <div class="suit fl">
             	<div class="suit-area">
                 	<h3 class="fl">适用场合</h3>
-                    <div class="suit-more fr">
-                		<a class="fr" href="service.html">+More</a>
-           			</div>
             	</div>
                 <div class="suit-image">
                 	<img src="__PUBLIC__/images/huojia1.jpg" alt="货架与托盘管理"  />
